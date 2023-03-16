@@ -1,5 +1,5 @@
 module "K8s" {
-   source = "./k8s"
+  source = "./k8s"
 }
 
 output "api_endpoints" {
@@ -15,9 +15,8 @@ output "pool" {
   value = module.K8s.pool
 }
 output "kubeconfig" {
- value = module.K8s.kubeconfig 
-sensitive = true
+  value     = module.K8s.kubeconfig
+  sensitive = true
 }
 
-##https://www.linode.com/docs/pro
-ducts/compute/kubernetes/guides/deploy-cluster-using-terraform/
+##https://www.linode.com/docs/products/compute/kubernetes/guides/deploy-cluster-using-terraform/
