@@ -1,5 +1,5 @@
 variable "token" {
-  default = "8130596f888229d5ece5a97b2e1e0cbcb54ca6c19f8c67909e29079be304e138"
+  default = ""
   description = "Linode K8s Token"
   sensitive = true
 }
